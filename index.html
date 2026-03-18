@@ -26,12 +26,28 @@
   }
   .page {
     max-width: 210mm;
-    height: 297mm;
-    overflow: hidden;
+    min-height: 297mm;
     margin: 20px auto;
     padding: 12mm 14mm 10mm 14mm;
     background: #fff;
     box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 640px) {
+    html { font-size: 11px; }
+    body { background: #fff; }
+    .page {
+      margin: 0;
+      padding: 20px 16px;
+      box-shadow: none;
+      min-height: unset;
+    }
+    h1 { font-size: 1.8rem; }
+    .contact-row { font-size: 0.85rem; }
+    .contact-row .sep { display: none; }
+    .contact-row .mobile-break { display: block; }
+    .skills-grid { grid-template-columns: 1fr; }
   }
 
   /* ── Header / Contact ── */
@@ -44,6 +60,7 @@
   }
   .contact-row a { color: #333; text-decoration: none; }
   .contact-row .sep { margin: 0 3px; color: #666; }
+  .contact-row .mobile-break { display: none; }
 
   /* ── Section headings ── */
   h2 {
@@ -94,7 +111,7 @@
 <header>
   <h1>ANUBHAV TYAGI</h1>
   <div class="contact-row">
-    Bangalore, India<span class="sep">·</span><span style="white-space:nowrap">(91) 9810858119</span><span class="sep">·</span><a href="mailto:work@anubhavtyagi.com">work@anubhavtyagi.com</a><span class="sep">·</span><a href="https://www.anubhavtyagi.com">anubhavtyagi.com</a><br/>
+    Bangalore, India<span class="sep">·</span><span style="white-space:nowrap">(91) 9810858119</span><span class="sep">·</span><a href="mailto:work@anubhavtyagi.com">work@anubhavtyagi.com</a><span class="sep">·</span><a href="https://www.anubhavtyagi.com">anubhavtyagi.com</a><br class="mobile-break"/>
     <a href="https://linkedin.com/in/anubhavtyagi27">linkedin.com/in/anubhavtyagi27</a><span class="sep">·</span><a href="https://github.com/anubhavtyagi27">github.com/anubhavtyagi27</a>
   </div>
 </header>
