@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KeepMeFit — Anubhav Tyagi</title>
+<meta name="description" content="KeepMeFit is an iOS app for logging meals, tracking daily nutrient breakdowns, and building a personal meal catalog from a food library.">
+<meta property="og:title" content="KeepMeFit — case study">
+<meta property="og:description" content="An iOS app for logging meals, tracking daily nutrient breakdowns, and building a personal meal catalog.">
+<meta property="og:type" content="article">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/main.css">
+<script>
+(function(){try{var t=localStorage.getItem("theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t;}catch(e){}document.documentElement.classList.add("js");})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">Anubhav Tyagi</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/resume/">Resume</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="case-hero reveal">
+    <p class="kicker">Case study</p>
+    <h1>KeepMeFit</h1>
+    <p class="lede">
+      An iOS app for logging meals, tracking the day's nutrient breakdown, and building
+      a personal meal catalog from a food library.
+    </p>
+    <dl class="meta-row">
+      <div><dt>Role</dt><dd>Design, product &amp; build</dd></div>
+      <div><dt>Stack</dt><dd>Swift · SwiftUI · iOS</dd></div>
+      <div><dt>Status</dt><dd>In development</dd></div>
+    </dl>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://github.com/anubhavtyagi27/keepmefit">View on GitHub</a>
+    </div>
+  </section>
+
+  <!-- NOTE: draft copy, written from the repo description — Anubhav to review
+       and replace the placeholders below with real screenshots. -->
+
+  <!-- ═══ CASE STUDY ═══ -->
+  <article class="prose reveal">
+
+    <h2>Why I built it</h2>
+    <p>
+      Most nutrition apps optimise for massive food databases and calorie streaks, but
+      day-to-day eating is repetitive: the same home-cooked meals, in rotation. I wanted
+      a tracker built around <em>meals I actually eat</em> — log a day in a few taps,
+      see the nutrient picture at a glance, and stop doing data entry for the same
+      dal-and-rice every week.
+    </p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li><strong>Daily log</strong> — record meals per day and see the day's nutrient breakdown.</li>
+      <li><strong>Meal catalog</strong> — compose reusable meals from a food library once, log them forever.</li>
+      <li><strong>Suggestions</strong> — discover meal ideas that fit the day's remaining budget.</li>
+    </ul>
+    <div class="figure-placeholder" role="img" aria-label="KeepMeFit screenshots placeholder">
+      App screenshots coming soon
+    </div>
+
+    <h2>How it's built</h2>
+    <p>
+      Native Swift and SwiftUI, developed with an AI-assisted workflow — agentic coding
+      tools for scaffolding and iteration, with product and interface decisions made by
+      hand. The data model separates the food library, the meal catalog, and the daily
+      log, so logging stays a two-tap action rather than a search-and-measure chore.
+    </p>
+
+    <h2>Status &amp; what's next</h2>
+    <p>
+      In active development. Next up: refining the suggestion logic and preparing a
+      TestFlight build.
+    </p>
+
+    <p><a href="/projects/">&larr; All projects</a></p>
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Anubhav Tyagi</p>
+    <nav class="footer-links" aria-label="Social">
+      <a href="https://github.com/anubhavtyagi27">GitHub</a>
+      <a href="https://linkedin.com/in/anubhavtyagi27">LinkedIn</a>
+      <a href="mailto:work@anubhavtyagi.com">Email</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
